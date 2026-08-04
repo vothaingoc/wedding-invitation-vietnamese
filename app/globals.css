@@ -259,6 +259,11 @@ main {
   line-height: 1.5;
 }
 
+.invitation-copy strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .invitation-divider {
   display: flex;
   align-items: center;
@@ -294,7 +299,7 @@ main {
   color: var(--olive-deep);
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(26px, 3vw, 32px);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
 }
 

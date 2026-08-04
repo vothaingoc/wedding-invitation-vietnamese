@@ -3,6 +3,7 @@ export const wedding = {
   brideName: "Ngọc Linh",
   weddingDate: "2026-10-12",
   weddingDateDisplay: "12.10.2026",
+  weddingDateLong: "12 tháng 10 năm 2026",
   weekday: "Thứ Hai",
   receptionTime: "14:30",
   banquetTimes: ["15:00", "17:00"],
@@ -25,11 +26,15 @@ export const wedding = {
   ],
   heroMessage:
     "Chúng tôi rất mong được gặp mọi người\ntrong ngày đặc biệt này.",
-  greeting: [
-    "Thái Ngọc và Ngọc Linh trân trọng báo tin lễ thành hôn sẽ được cử hành vào ngày 12 tháng 10 năm 2026.",
-    "Trong niềm hân hoan của ngày trọng đại, chúng tôi cùng hai gia đình thân mời quý vị đến chung vui và sẻ chia khoảnh khắc ý nghĩa này.",
-    "Sự hiện diện của quý vị là niềm vinh hạnh, góp phần làm nên một ngày vui thật trọn vẹn.",
-  ],
+  greeting: {
+    intro: "Với tất cả niềm hân hoan,",
+    announcement:
+      "xin được báo tin lễ thành hôn của chúng tôi sẽ được cử hành vào ngày",
+    invitation:
+      "Chúng tôi cùng hai gia đình chân thành kính mời quý vị đến chung vui và chia sẻ khoảnh khắc đặc biệt này.",
+    closing:
+      "Sự hiện diện của quý vị sẽ là niềm vinh hạnh và hạnh phúc lớn lao đối với chúng tôi.",
+  },
   footerMessage:
     "Ngày đặc biệt sẽ trở nên trọn vẹn hơn khi có sự hiện diện của quý vị.",
 } as const;

@@ -182,12 +182,19 @@ export default function WeddingInvitation() {
         <div className="enso" aria-hidden="true">♡</div>
         <SectionHeading eyebrow="LỜI MỜI" title="Trân trọng kính mời" />
         <div className="invitation-copy">
-          <p className="invitation-lead">{wedding.greeting[0]}</p>
+          <p className="invitation-lead">
+            {wedding.greeting.intro}{" "}
+            <strong>{wedding.groomName} và {wedding.brideName}</strong>{" "}
+            {wedding.greeting.announcement}{" "}
+            <strong>{wedding.weddingDateLong}</strong>.
+          </p>
           <div className="invitation-divider" aria-hidden="true">
             <span />
           </div>
-          <p>{wedding.greeting[1]}</p>
-          <p className="invitation-closing">{wedding.greeting[2]}</p>
+          <p>{wedding.greeting.invitation}</p>
+          <p className="invitation-closing">
+            <strong>{wedding.greeting.closing}</strong>
+          </p>
         </div>
         <div className="signature">
           {wedding.groomName} <span>&amp;</span> {wedding.brideName}
