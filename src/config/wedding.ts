@@ -2,6 +2,7 @@ export const wedding = {
   groomName: "Thái Ngọc",
   brideName: "Ngọc Linh",
   weddingDate: "2026-10-12",
+  weddingDateHeroDisplay: "12.10.2026",
   weddingDateDisplay: "12.10.2026 (dương lịch)",
   weddingDateLong: "12 tháng 10 năm 2026 (dương lịch)",
   weekday: "Thứ Hai",

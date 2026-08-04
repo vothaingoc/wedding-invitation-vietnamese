@@ -170,7 +170,7 @@ export default function WeddingInvitation() {
           <h1>
             <span>{wedding.groomName}</span><em>&amp;</em><span>{wedding.brideName}</span>
           </h1>
-          <div className="hero-date">{wedding.weddingDateDisplay}</div>
+          <div className="hero-date">{wedding.weddingDateHeroDisplay}</div>
           <div className="hero-message"><Lines text={wedding.heroMessage} /></div>
           <a className="scroll-cue" href="#greeting" aria-label="Xem thiệp mời">
             <span />XEM THIỆP
