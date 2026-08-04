@@ -309,7 +309,7 @@ main {
 
 .invitation-copy .invitation-closing {
   margin-top: var(--space-32);
-  color: var(--olive-deep);
+  color: var(--ink);
   font-weight: 400;
 }
 
