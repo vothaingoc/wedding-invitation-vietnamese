@@ -180,9 +180,14 @@ export default function WeddingInvitation() {
 
       <section id="greeting" className="section invitation-intro reveal">
         <div className="enso" aria-hidden="true">♡</div>
-        <SectionHeading eyebrow="LỜI MỜI" title="Lời chào" />
-        <div className="prose copy-vi">
-          {wedding.greeting.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+        <SectionHeading eyebrow="LỜI MỜI" title="Trân trọng kính mời" />
+        <div className="invitation-copy">
+          <p className="invitation-lead">{wedding.greeting[0]}</p>
+          <div className="invitation-divider" aria-hidden="true">
+            <span />
+          </div>
+          <p>{wedding.greeting[1]}</p>
+          <p className="invitation-closing">{wedding.greeting[2]}</p>
         </div>
         <div className="signature">
           {wedding.groomName} <span>&amp;</span> {wedding.brideName}

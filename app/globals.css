@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -23,7 +24,7 @@ body {
   margin: 0;
   background: var(--ivory);
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Be Vietnam Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -113,6 +114,7 @@ main {
   font-weight: 400;
   letter-spacing: 0.08em;
   line-height: 1.18;
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 
 .hero h1 span,
@@ -190,15 +192,21 @@ main {
 
 .section-heading h2 {
   margin: 0;
-  font-size: 32px;
-  font-weight: 400;
-  letter-spacing: 0.12em;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(34px, 5vw, 46px);
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  line-height: 1.15;
 }
 
 .invitation-intro {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
+}
+
+.invitation-intro .section-heading {
+  margin-bottom: 42px;
 }
 
 .enso {
@@ -230,11 +238,66 @@ main {
   line-height: 1.85;
 }
 
-.signature {
-  margin-top: 46px;
+.invitation-copy {
+  width: min(100%, 690px);
+  margin: 0 auto;
+  color: #4d4a42;
+  font-size: clamp(15px, 1.45vw, 17px);
+  font-weight: 300;
+  line-height: 2;
+}
+
+.invitation-copy p {
+  max-width: 660px;
+  margin: 0 auto 24px;
+}
+
+.invitation-copy .invitation-lead {
+  max-width: 620px;
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(22px, 2.6vw, 29px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.invitation-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 112px;
+  margin: 29px auto 30px;
+}
+
+.invitation-divider::before,
+.invitation-divider::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: var(--gold-light);
+}
+
+.invitation-divider span {
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background: var(--gold);
+}
+
+.invitation-copy .invitation-closing {
+  margin-top: 28px;
   color: var(--olive-deep);
-  font-size: 18px;
-  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.signature {
+  margin-top: 42px;
+  color: var(--olive-deep);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(25px, 3vw, 30px);
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 .signature span {
@@ -829,6 +892,23 @@ footer {
 }
 
 @media (max-width: 520px) {
+  .invitation-intro .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .invitation-copy {
+    line-height: 1.85;
+  }
+
+  .invitation-copy p {
+    margin-bottom: 20px;
+  }
+
+  .invitation-divider {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+
   .time-grid-three {
     grid-template-columns: 1fr;
   }

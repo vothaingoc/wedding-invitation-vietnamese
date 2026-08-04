@@ -26,10 +26,9 @@ export const wedding = {
   heroMessage:
     "Chúng tôi rất mong được gặp mọi người\ntrong ngày đặc biệt này.",
   greeting: [
-    "Chúng tôi trân trọng báo tin lễ thành hôn của Thái Ngọc và Ngọc Linh sẽ được tổ chức vào ngày 12 tháng 10 năm 2026.",
-    "Trong niềm hân hoan của ngày trọng đại, chúng tôi cùng gia đình trân trọng kính mời quý vị đến tham dự buổi tiệc thân mật và chung vui cùng hai gia đình.",
-    "Sự hiện diện của quý vị là niềm vinh hạnh và là món quà quý báu đối với chúng tôi cùng gia đình.",
-    "Rất hân hạnh được đón tiếp quý vị.",
+    "Thái Ngọc và Ngọc Linh trân trọng báo tin lễ thành hôn sẽ được cử hành vào ngày 12 tháng 10 năm 2026.",
+    "Trong niềm hân hoan của ngày trọng đại, chúng tôi cùng hai gia đình thân mời quý vị đến chung vui và sẻ chia khoảnh khắc ý nghĩa này.",
+    "Sự hiện diện của quý vị là niềm vinh hạnh, góp phần làm nên một ngày vui thật trọn vẹn.",
   ],
   footerMessage:
     "Ngày đặc biệt sẽ trở nên trọn vẹn hơn khi có sự hiện diện của quý vị.",
