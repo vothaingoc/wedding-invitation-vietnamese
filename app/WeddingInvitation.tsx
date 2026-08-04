@@ -184,7 +184,7 @@ export default function WeddingInvitation() {
         <div className="invitation-copy">
           <p className="invitation-lead">
             {wedding.greeting.intro}{" "}
-            <strong>{wedding.groomName} và {wedding.brideName}</strong>{" "}
+            {wedding.groomName} cùng {wedding.brideName}{" "}
             {wedding.greeting.announcement}{" "}
             <strong>{wedding.weddingDateLong}</strong>.
           </p>
@@ -192,9 +192,7 @@ export default function WeddingInvitation() {
             <span />
           </div>
           <p>{wedding.greeting.invitation}</p>
-          <p className="invitation-closing">
-            <strong>{wedding.greeting.closing}</strong>
-          </p>
+          <p className="invitation-closing">{wedding.greeting.closing}</p>
         </div>
         <div className="signature">
           {wedding.groomName} <span>&amp;</span> {wedding.brideName}

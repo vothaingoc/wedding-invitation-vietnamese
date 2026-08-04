@@ -272,9 +272,9 @@ main {
 .invitation-copy .invitation-lead {
   max-width: 680px;
   color: var(--ink);
-  font-size: 20px;
+  font-size: inherit;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: inherit;
   letter-spacing: 0;
 }
 
@@ -310,7 +310,7 @@ main {
 .invitation-copy .invitation-closing {
   margin-top: var(--space-32);
   color: var(--olive-deep);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .signature {
@@ -950,8 +950,6 @@ footer {
   .thank-you-card h1 { font-size: 42px; }
 
   .invitation-copy { font-size: 18px; }
-  .invitation-copy .invitation-lead { font-size: 24px; }
-
   .venue h3,
   .signature,
   .thank-you-names,
