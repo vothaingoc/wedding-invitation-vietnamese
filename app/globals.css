@@ -1,16 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Serif:wght@400;500&display=swap");
 @import "tailwindcss";
 
 :root {
-  --ivory: #f8f5f0;
+  --ivory: #f7f3ec;
   --paper: #f4efe8;
-  --ink: #3a322c;
-  --muted: #8a857a;
-  --gold: #b89a63;
+  --ink: #352f2a;
+  --muted: #70685f;
+  --gold: #ad8749;
   --gold-light: #d9c8aa;
   --olive: #8a857a;
   --olive-deep: #625b52;
   --line: rgba(184, 154, 99, 0.32);
+  --font-display: "Noto Serif", serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+  --color-text: #352f2a;
+  --color-muted: #70685f;
+  --color-accent: #ad8749;
+  --color-background: #f7f3ec;
   --space-16: 16px;
   --space-24: 24px;
   --space-32: 32px;
@@ -28,12 +34,34 @@ html {
 
 body {
   margin: 0;
-  background: var(--ivory);
-  color: var(--ink);
-  font-family: "Inter", sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.8;
+  font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
+}
+
+.hero h1,
+.section-heading h2,
+.signature,
+.venue h3,
+.thank-you-card h1,
+.thank-you-names,
+.footer-names {
+  font-family: var(--font-display);
+}
+
+.hero-date,
+.date-display > strong,
+.time-grid strong,
+.timeline-item time,
+.thank-you-date,
+.footer-date,
+select {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
 }
 
 button,
@@ -100,9 +128,9 @@ main {
 .hero-kicker {
   margin: 0 0 var(--space-24);
   color: #eadcc3;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.28em;
 }
 
 .hero-mark {
@@ -119,10 +147,9 @@ main {
 
 .hero h1 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(44px, 8vw, 72px);
+  font-size: 42px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 0.98;
 }
 
@@ -142,15 +169,15 @@ main {
   padding: 8px var(--space-32);
   border-top: 1px solid rgba(248, 245, 240, 0.48);
   border-bottom: 1px solid rgba(248, 245, 240, 0.48);
-  font-size: 13px;
+  font-size: 30px;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.04em;
 }
 
 .hero-message {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 }
 
 .scroll-cue {
@@ -161,9 +188,9 @@ main {
   gap: 8px;
   margin: var(--space-48) auto 0;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.24em;
 }
 
 .scroll-cue span {
@@ -188,17 +215,16 @@ main {
   display: block;
   margin-bottom: var(--space-16);
   color: var(--gold);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.28em;
 }
 
 .section-heading h2 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(36px, 5vw, 42px);
+  font-size: 34px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 1.15;
 }
 
@@ -228,21 +254,14 @@ main {
   font-size: 72px;
 }
 
-.prose {
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.prose p { margin: 0 0 24px; }
-
 .invitation-copy {
-  width: min(100%, 650px);
+  width: min(100%, 680px);
   margin: 0 auto;
   color: var(--ink);
-  font-size: clamp(16px, 1.45vw, 18px);
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
+  letter-spacing: 0;
 }
 
 .invitation-copy p {
@@ -251,17 +270,17 @@ main {
 }
 
 .invitation-copy .invitation-lead {
-  max-width: 620px;
+  max-width: 680px;
   color: var(--ink);
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(25px, 2.6vw, 30px);
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0;
 }
 
 .invitation-copy strong {
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .invitation-divider {
@@ -297,16 +316,14 @@ main {
 .signature {
   margin-top: var(--space-48);
   color: var(--olive-deep);
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(26px, 3vw, 32px);
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .signature span {
   padding: 0 6px;
   color: var(--gold);
-  font-style: italic;
 }
 
 .details-section {
@@ -330,16 +347,16 @@ main {
 .date-display > strong {
   display: block;
   margin-bottom: 6px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(38px, 8vw, 48px);
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
 
 .date-display .language-block {
   color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .time-grid {
@@ -377,24 +394,24 @@ main {
 
 .time-grid span {
   color: var(--gold);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
 }
 
 .time-grid strong {
   margin: 6px 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 .time-grid .language-block {
+  display: inline;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.6;
 }
-
-.time-grid .language-block { display: inline; }
 
 .venue { padding: var(--space-32) 0; }
 
@@ -415,18 +432,18 @@ main {
   flex-direction: column;
   gap: 4px;
   margin: 0 0 8px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
 }
 
 .venue p,
 .venue a {
   margin: 4px 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0;
 }
 
 .primary-button,
@@ -441,9 +458,9 @@ main {
   background: #eee5d7;
   color: var(--ink);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
   transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
 }
 
@@ -488,8 +505,8 @@ main {
 
 .timeline-item time {
   color: var(--gold);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 500;
   letter-spacing: 0.04em;
 }
 
@@ -505,7 +522,7 @@ main {
   box-shadow: 0 0 0 1px var(--olive);
 }
 
-.timeline-item .language-block { color: var(--muted); font-size: 13px; }
+.timeline-item .language-block { color: var(--muted); font-size: 14px; }
 
 .rsvp-section {
   background: #e8e0d5;
@@ -532,7 +549,7 @@ main {
   border-bottom: 1px solid var(--line);
   color: var(--muted);
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .deadline-note,
@@ -543,7 +560,7 @@ main {
   border-radius: 12px;
   background: #eee5d7;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -552,18 +569,18 @@ main {
 .deadline-note p:last-child,
 .form-notice p:last-child { margin-bottom: 0; }
 
-form { display: grid; gap: var(--space-32); }
+form { display: grid; gap: var(--space-24); }
 
 .field {
   display: grid;
   gap: 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .field > span,
 fieldset legend {
   color: var(--ink);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -574,18 +591,20 @@ input,
 textarea,
 select {
   width: 100%;
-  min-height: 50px;
-  padding: 13px var(--space-16);
+  min-height: 52px;
+  padding: 14px var(--space-16);
   border: 1px solid rgba(184, 154, 99, 0.58);
   border-radius: 12px;
   outline: none;
   background: var(--ivory);
   color: var(--ink);
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0;
   transition: border-color 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
 }
 
-textarea { min-height: 112px; resize: vertical; }
+textarea { min-height: 112px; line-height: 1.6; resize: vertical; }
 
 input:hover,
 textarea:hover,
@@ -641,7 +660,7 @@ fieldset legend {
   padding: 11px var(--space-16) 11px 50px;
   border: 1px solid rgba(184, 154, 99, 0.5);
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   transition: border-color 200ms ease, background-color 200ms ease, transform 200ms ease;
 }
@@ -675,9 +694,14 @@ fieldset legend {
 
 .radio-card strong {
   color: var(--ink);
-  font-family: inherit;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
+}
+
+.radio-card small {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .confirm-row {
@@ -698,7 +722,7 @@ fieldset legend {
 .confirm-row span {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
 }
 
@@ -709,6 +733,8 @@ fieldset legend {
   flex-direction: column;
   gap: 2px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .submit-button:disabled { opacity: 0.58; }
@@ -777,18 +803,17 @@ fieldset legend {
 .thank-you-eyebrow {
   margin: 0 0 15px;
   color: var(--gold);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.28em;
 }
 
 .thank-you-card h1 {
   margin: 0;
   color: var(--ink);
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(38px, 8vw, 48px);
+  font-size: 34px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 1.2;
 }
 
@@ -815,23 +840,21 @@ fieldset legend {
 .thank-you-names {
   margin-top: 38px;
   color: var(--olive-deep);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
 }
 
 .thank-you-names span {
   padding: 0 7px;
   color: var(--gold);
-  font-style: italic;
 }
 
 .thank-you-date {
   margin: 12px 0 0;
   color: #989383;
-  font-size: 13px;
-  letter-spacing: 0.12em;
+  font-size: 14px;
+  letter-spacing: 0.04em;
 }
 
 footer {
@@ -864,22 +887,20 @@ footer {
 .footer-names {
   margin-top: var(--space-48);
   color: #eadcc3;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
 }
 
 .footer-names span {
   padding: 0 6px;
   color: var(--gold);
-  font-style: italic;
 }
 
 .footer-date {
   color: #b7b0a7;
-  font-size: 13px;
-  letter-spacing: 0.2em;
+  font-size: 14px;
+  letter-spacing: 0.04em;
 }
 
 .reveal {
@@ -899,6 +920,7 @@ footer {
 }
 
 @media (min-width: 700px) {
+  body { font-size: 17px; }
   .section { padding: var(--space-96) var(--space-48); }
   .details-card { padding: var(--space-72); }
   .rsvp-card { padding: var(--space-72); }
@@ -911,12 +933,29 @@ footer {
     align-items: baseline;
     justify-content: center;
     gap: 10px;
+    font-size: 60px;
   }
 
   .hero h1 span,
   .hero h1 em { display: inline; }
 
   .hero h1 em { margin: 0 -2px; }
+
+  .hero-message,
+  .venue p,
+  .venue a,
+  .footer-message { font-size: 17px; }
+
+  .section-heading h2,
+  .thank-you-card h1 { font-size: 42px; }
+
+  .invitation-copy { font-size: 18px; }
+  .invitation-copy .invitation-lead { font-size: 24px; }
+
+  .venue h3,
+  .signature,
+  .thank-you-names,
+  .footer-names { font-size: 28px; }
 }
 
 @media (max-width: 520px) {
