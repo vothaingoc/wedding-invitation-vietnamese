@@ -339,6 +339,11 @@ main {
   text-align: center;
 }
 
+.details-card .section-heading h2 {
+  font-size: clamp(20px, 6.4vw, 34px);
+  white-space: nowrap;
+}
+
 .date-display {
   padding: 0 0 var(--space-32);
   border-bottom: 1px solid var(--line);
@@ -923,6 +928,7 @@ footer {
   body { font-size: 17px; }
   .section { padding: var(--space-96) var(--space-48); }
   .details-card { padding: var(--space-72); }
+  .details-card .section-heading h2 { font-size: 42px; }
   .rsvp-card { padding: var(--space-72); }
   fieldset { grid-template-columns: 1fr 1fr; }
   fieldset legend { grid-column: 1 / -1; }
