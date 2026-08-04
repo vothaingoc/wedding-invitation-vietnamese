@@ -13,8 +13,8 @@ export const wedding = {
   venuePhone: "",
   googleMapsUrl:
     "https://www.google.com/maps?q=21.33199519890027,105.35638231689768",
-  replyDeadline: "2026-09-15",
-  replyDeadlineDisplay: "15.09.2026",
+  replyDeadline: "2026-09-30",
+  replyDeadlineDisplay: "30.09.2026",
   coverImage: "/wedding-cover-mobile.jpg",
   ogImage: "/og-wedding-vi.png",
   publicUrl: "https://wedding-invitation.vercel.app",
